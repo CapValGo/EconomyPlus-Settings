@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>EconomyPlus | Import/Export</title>
+        <base href="../">
+        <link rel="icon" href="assets/page_icon.gif">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Scada&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav_bar.css">
+        <link rel="stylesheet" href="css/content_styles.css">
+        <script src="components/header.js" type="text/javascript" defer></script>
+        <script src="scripts/import_export.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header-component></header-component>
+        <!--Contents here-->
+        <div class="input-fields">
+            <h2>
+                <div>
+                    <label for="input-file">Upload Settings</label><br>
+                    <input type="file" id="input-file">
+                </div>
+            </h2>
+            <h2>
+                Output Settings
+                <button class="buttton on" id="Output.copy"onclick=toggle>Copy</button>
+                <br>
+                <textarea id="output" class="output">Generator Output...</textarea>
+                
+                <div class="information-text">
+                    <p>Go to <mark>EconomyPlus v8.0\data\directory\functions\setup_settings</mark> and chose this folder to upload settings, if you want to save your settings, copy the text in the output and replace it with the text in this folder after you're done setting up your preferences.</p>
+                </div>
+            </h2>
+        </div>
+        <div class="sidebar">
+            <div class="logo-details">
+              <i class=''></i>
+                <div class="logo_name">Menu</div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+              <ul class="nav-list">
+              <!-- <li>
+                  <i class='bx bx-search' ></i>
+                  <input type="text" placeholder="Search...">
+                  <span class="tooltip-left">Search</span>
+              </li> -->
+              <li>
+                <a href="https://www.youtube.com/channel/UCfND3L_8BCYIC7_VGJm61ug?view_as=subscriber" target="_blank">
+                  <i class='bx bxl-youtube'></i>
+                  <span class="social">Youtube</span>
+                </a>
+                  <span class="tooltip-left">Youtube</span>
+              </li>
+              <li>
+                <a href="https://discord.gg/FXUv7J6" target="_blank">
+                  <i class='bx bxl-discord'></i>
+                  <span class="social">Discord</span>
+                </a>
+                <span class="tooltip-left">Discord</span>
+              </li>
+              <li>
+                <a href="https://www.paypal.com/paypalme/fend0ran" target="_blank">
+                  <i class='bx bxl-paypal'></i>
+                  <span class="social">PayPal</span>
+                </a>
+                <span class="tooltip-left">PayPal</span>
+              </li>
+              <li>
+                <a href="https://www.patreon.com/fendoran?fan_landing=true" target="_blank">
+                  <i class='bx bxl-patreon'></i>
+                  <span class="social">Patreon</span>
+                </a>
+                <span class="tooltip-left">Patreon</span>
+              </li>
+              <li class="information">
+                  <div class="information-details">
+                  <a href="EconomyPlus Settings/nav/information.html">
+                    <i class='bx bx-info-circle'></i>
+                      <div class="name">Information</div>
+                  </div>
+              </li>
+            </ul>
+        </div>
+        <script src="EconomyPlus Settings/components/menu_animation.js"></script>
+    </body>
+</html>

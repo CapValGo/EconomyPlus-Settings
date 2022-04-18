@@ -1,0 +1,162 @@
+html, body {
+  color: #ffffff;
+  font-family: 'Scada', sans-serif;
+  margin: 0;
+  background: #202020;
+  height: 100%;
+  font-size: 15px;
+}
+
+.image-container {
+  margin: auto;
+  height: auto;
+  background: #1a1919;
+  text-align: center;
+  width: 50%;
+  box-shadow: #272727 0px 1px 3px, #272727 0px 1px 2px;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.input-fields {
+  background:#1a1919;
+  min-height: 100%;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 0px;
+  width: 50%;
+  box-shadow: #272727 0px 1px 3px, #272727 0px 1px 2px;
+}
+
+.output {
+  height: 400px;
+  width: 800px;
+  font-size: 15px;
+  color: #ffffff;
+  border: 1px solid #0f0f0f;
+  outline: none;
+  background-color: #3B3B3B;
+}
+
+.converse {
+  position: fixed;
+  right: 70px;
+  bottom: 70px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #1a1919;
+  box-shadow: 0 2px 4px 0 #1a1919;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.converse .icon-ie {
+  margin: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index:2;
+}
+  
+.converse .icon-ie span {
+  position: relative;
+  z-index: 2;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #0f0f0f;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  border-radius:50%;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.converse .icon-ie span i {
+  font-size: 30px;
+  line-height: 60px;
+  color: #ffffff;
+}
+  
+.converse .icon-ie .tooltip-ie {
+  position: absolute;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.converse .icon-ie:hover .tooltip-ie {
+  opacity: 1;
+  pointer-events: auto;
+  top: -90px;
+}
+  
+.converse .icon-ie .tooltip-ie:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+  
+.converse .icon-ie:hover span, .converse .icon-ie:hover .tooltip-ie {
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+  
+.converse .icon:hover span {
+  color: #ffffff;
+}
+  
+.converse .icon-ie:hover span, .converse .icon-ie:hover .tooltip-ie, .converse .icon-ie:hover .tooltip-ie:before {
+  background: #dd5752;
+}
+
+.information-text-container {
+  margin: 0 auto;
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.information-text-title {
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  content: "";
+  display: block;
+  width: 95%;
+  border-bottom: 1px solid #ffffff25;
+  margin: 0 auto 0;
+  margin-bottom: 25px;
+}
+
+.information-text {
+  font-size: 15px;
+  font-family: 'Scada', sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin:0;
+}
+
+.information-video {
+  width: 560px;
+  height: 315px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

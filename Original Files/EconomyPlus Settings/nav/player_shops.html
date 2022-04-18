@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>EconomyPlus Core | Player Shops</title>
+        <base href="../">
+        <link rel="icon" href="assets/page_icon.gif">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Scada&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav_bar.css">
+        <link rel="stylesheet" href="css/content_styles.css">
+        <script src="components/header.js" type="text/javascript" defer></script>
+        <script src="components/toggle_button.js" type="text/javascript" defer></script>
+        <script src="components/input_money.js" type="text/javascript" defer></script>
+        <script src="components/input_percent.js" type="text/javascript" defer></script>
+        <script src="components/input_time.js" type="text/javascript" defer></script>
+        <script src="components/input_number.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header-component></header-component>
+        <!--Contents here-->
+        <div class="input-fields">
+            <toggle-button key="player_shop.enabled" name="Player Shops" info="Enables/Disables Market Shops." default="1"></toggle-button>
+            <input-money key="market.sign_cost" name="Shop Cost" info="Cost to make a Market Shop." default="25"></input-money>
+            <input-percent key="market.fee" name="Shop Creation Fee" info="Market fee that the Vault keeps after a Market is destroyed, this is taken from the currency you paid to make the Market Shop" default="10"></input-percent>
+            <input-time key="MarketSignTimer" name="Shop Despawn Timer" info="Time it takes for the Market Shop to despawn when the owner has been inactive." default="6000"></input-time>
+            <input-time key="#null" name="Broken Shop Despawn Timer (NOT WORKING)" info="Time it takes for the floating text that appears when destroying a Market Sign to despawn." default="18000"></input-time>
+            <toggle-button key="#null" name="Shop Protection (NOT WORKING)" info="Enables/Disables Protection for Market Shops" default="1"></toggle-button>
+        </div>
+        <div class="sidebar">
+            <div class="logo-details">
+              <i class=''></i>
+                <div class="logo_name">Menu</div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+              <ul class="nav-list">
+              <!-- <li>
+                  <i class='bx bx-search' ></i>
+                  <input type="text" placeholder="Search...">
+                  <span class="tooltip-left">Search</span>
+              </li> -->
+              <li>
+                <a href="https://www.youtube.com/channel/UCfND3L_8BCYIC7_VGJm61ug?view_as=subscriber" target="_blank">
+                  <i class='bx bxl-youtube'></i>
+                  <span class="social">Youtube</span>
+                </a>
+                  <span class="tooltip-left">Youtube</span>
+              </li>
+              <li>
+                <a href="https://discord.gg/FXUv7J6" target="_blank">
+                  <i class='bx bxl-discord'></i>
+                  <span class="social">Discord</span>
+                </a>
+                <span class="tooltip-left">Discord</span>
+              </li>
+              <li>
+                <a href="https://www.paypal.com/paypalme/fend0ran" target="_blank">
+                  <i class='bx bxl-paypal'></i>
+                  <span class="social">PayPal</span>
+                </a>
+                <span class="tooltip-left">PayPal</span>
+              </li>
+              <li>
+                <a href="https://www.patreon.com/fendoran?fan_landing=true" target="_blank">
+                  <i class='bx bxl-patreon'></i>
+                  <span class="social">Patreon</span>
+                </a>
+                <span class="tooltip-left">Patreon</span>
+              </li>
+              <li class="information">
+                  <div class="information-details">
+                  <a href="EconomyPlus Settings/nav/information.html">
+                    <i class='bx bx-info-circle'></i>
+                      <div class="name">Information</div>
+                  </div>
+              </li>
+            </ul>
+        </div>
+        <script src="EconomyPlus Settings/components/menu_animation.js"></script>
+    </body>
+</html>

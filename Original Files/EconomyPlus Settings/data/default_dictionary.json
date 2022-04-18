@@ -1,0 +1,6 @@
+{
+    "config.SetWorldSpawn": {
+       "default": 1,
+       "type": "ep.config"
+    }
+}

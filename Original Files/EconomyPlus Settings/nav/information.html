@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>EconomyPlus | Information</title>
+        <base href="../">
+        <link rel="icon" href="assets/page_icon.gif">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Scada&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav_bar.css">
+        <link rel="stylesheet" href="css/content_styles.css">
+        <script src="components/header.js" type="text/javascript" defer></script>
+        <script src="components/toggle_button.js" type="text/javascript" defer></script>
+        <script src="components/input_money.js" type="text/javascript" defer></script>
+        <script src="components/input_percent.js" type="text/javascript" defer></script>
+        <script src="components/input_time.js" type="text/javascript" defer></script>
+        <script src="components/input_number.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header-component></header-component>
+        <!--Contents here-->
+        <div class="input-fields">
+            <section class="information-text-field"> 
+                <div class="information-text-container"> 
+                    <p class="information-text-title">Bank</p> 
+                    <P class="information-text">Your Bank account act as a secure deposit for your money, depositing your money into your Bank account makes it so it can't be touched, lost or otherwise disappear,
+                    having $1000 in your bank account triggers the Interest feature, this will give you 1% Interest of your total Bank Balance every 1 hour of active game-play.</p><br>
+                    <p class="information-text">Loaning money is an alternative way for you to buy something right then and there, to loan
+                        you need to have a total of 15% Equity, once you have taken a loan, you will then be prompted every hour to pay off a minimum amount of 10% of the total value of your loan,
+                        you can also set up a automatic payment plan from a Bank sign or if enabled /trigger bank, failure to pay off your loan when prompted, will result in a decrease of your Credit Score each failed payment by 5 and each successful payment will increase your Credit Score by 1.</p><br>
+                    <p class="information-text">• <b>Deposit</b>: Let's you put money into your bank account.</p>
+                    <p class="information-text">• <b>Withdraw</b>: Lets you take money out of your bank account.</p>
+                    <p class="information-text">• <b>Loan</b>: Let's you borrow money.</p>
+                    <p class="information-text">• <b>Credit</b>: Let's you pay back borrowed money.</p>
+                    <p class="information-text">• <b>Auto Pay</b>: Let's you set up a automatic payment system towards debt.</p>
+                    <p class="information-text">• <b>Bounty</b>: Let's you pay off your bounty (only shows if you have an active bounty).</p><br><br>
+                    <p class="information-text-title">Credit Score</p> 
+                    <P class="information-text">The higher your score is, the better off you are, the lower your score is, the higher percentage you get when you're in a debt, once you reach 0 you'll be blacklisted from most activities that is server operated, excludes buying/selling to/from Market Shops & Trading.</p><br>
+                    <p class="information-text">• <b>CS</b>: 76-100 (Debt Rate is 1%).</p>
+                    <p class="information-text">• <b>CS</b>: 51-75 (Debt Rate is 2%).</p>
+                    <p class="information-text">• <b>CS</b>: 26-50 (Debt Rate is 4%).</p>
+                    <p class="information-text">• <b>CS</b>: 1-25 (Debt Rate is 8%).</p>
+                    <p class="information-text">• <b>CS</b>: 0 (Debt Rate is 0%).</p><br><br>
+                    <p class="information-text-title">Shops</p> 
+                    <P class="information-text">These shops are server operated and can only be made by a OP, these shops have infinite items and can if the setting is enabled, have infinite money, there's 3 types of Shops.</p><br>
+                    <p class="information-text">• <b>Normal</b>: Which has no limits and has infinite uses.</p>
+                    <p class="information-text">• <b>Max Use</b>: Which has a limit and can only be used a certain amount of times before a timer appears and can't be used again until the timer is over.</p>
+                    <p class="information-text">• <b>Dynamic</b>: Which increases/decreases in price each use and a timer will appear indicating when it resets back to the original price.</p><br><br>
+                    <p class="information-text-title">Market</p> 
+                    <P class="information-text">These shops are player operated and can be made by anyone, Shops cost $100 to make, if you at a later date decide that you no longer want the shop,
+                        you can reset it to a normal sign and you will get 90% of the cost back, the other 10% is a fee to the server Vault.</p><br>
+                    <p class="information-text">• <b>Buy Shop</b>: Which has no limits and has infinite uses.</p>
+                    <p class="information-text">• <b>Sell Shop</b>: Which has a limit and can only be used a certain amount of times before a timer appears and can't be used again until the timer is over.</p><br>
+                    <p class="information-text">Once a player has used your shop, you can collect the money/item(s) from the respective shop.</p><br><br>
+                    <p class="information-text-title">Auction</p> 
+                    <P class="information-text">You can either be the Auctioneer or the person bidding, once a Auction is up, there will be a 1 minute bid round, after the timer's up, the person with the highest bid wins, to ensure a fair bidding, the timer will increase to 10 seconds if the bid almost finished and someone decided to be cheeky and bid at the very last second. The server Vault will claim 5% of the winning bid as a fee.</p><br><br>
+                    <p class="information-text-title">Pay</p> 
+                    <P class="information-text">You can pay other players, but.. for now it's very limited, you must be within 10 blocks of the player that you want to pay, in addition to this, the person you wish to pay must be the closest player to you, meaning that if there is another player closer to you than the player that you wish to pay, that other player will receive your money.</p><br><br>
+                    <p class="information-text-title">Trading</p> 
+                    <P class="information-text">You can buy/sell items to other players, but.. for now it's very limited, you must be within 10 blocks of the player that you want to trade, in addition to this, any player within this area can buy that item being sold.</p><br><br>
+                    <p class="information-text-title">Dying</p> 
+                    <P class="information-text">When you die, you will lose 15% of your total Wallet. 10% can be picked up (within 5 minutes in a loaded chunk) the other 5% is lost indefinitely. In addition, other players can pick up the money that you lost, like any other item that you lose.</p><br><br>
+                    <P class="information-text"><mark><b>Note:</b> Most of the mentioned features here is a default setting, they can be changed to any value or disabled by the server owner. (If you're on a server using this datapack, be sure to ask what settings the server is using and what they're set to.</mark></p>
+                </div> 
+            </section>
+        </div>
+        <div class="sidebar">
+            <div class="logo-details">
+              <i class=''></i>
+                <div class="logo_name">Menu</div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+              <ul class="nav-list">
+              <!-- <li>
+                  <i class='bx bx-search' ></i>
+                  <input type="text" placeholder="Search...">
+                  <span class="tooltip-left">Search</span>
+              </li> -->
+              <li>
+                <a href="https://www.youtube.com/channel/UCfND3L_8BCYIC7_VGJm61ug?view_as=subscriber" target="_blank">
+                  <i class='bx bxl-youtube'></i>
+                  <span class="social">Youtube</span>
+                </a>
+                  <span class="tooltip-left">Youtube</span>
+              </li>
+              <li>
+                <a href="https://discord.gg/FXUv7J6" target="_blank">
+                  <i class='bx bxl-discord'></i>
+                  <span class="social">Discord</span>
+                </a>
+                <span class="tooltip-left">Discord</span>
+              </li>
+              <li>
+                <a href="https://www.paypal.com/paypalme/fend0ran" target="_blank">
+                  <i class='bx bxl-paypal'></i>
+                  <span class="social">PayPal</span>
+                </a>
+                <span class="tooltip-left">PayPal</span>
+              </li>
+              <li>
+                <a href="https://www.patreon.com/fendoran?fan_landing=true" target="_blank">
+                  <i class='bx bxl-patreon'></i>
+                  <span class="social">Patreon</span>
+                </a>
+                <span class="tooltip-left">Patreon</span>
+              </li>
+              <li class="information">
+                  <div class="information-details">
+                  <a href="EconomyPlus Settings/nav/information.html">
+                    <i class='bx bx-info-circle'></i>
+                      <div class="name">Information</div>
+                  </div>
+              </li>
+            </ul>
+        </div>
+        <script src="EconomyPlus Settings/components/menu_animation.js"></script>
+    </body>
+</html>

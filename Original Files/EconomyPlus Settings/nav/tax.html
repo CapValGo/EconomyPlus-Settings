@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>EconomyPlus Core | Tax</title>
+        <base href="../">
+        <link rel="icon" href="assets/page_icon.gif">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Scada&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav_bar.css">
+        <link rel="stylesheet" href="css/content_styles.css">
+        <script src="components/header.js" type="text/javascript" defer></script>
+        <script src="components/toggle_button.js" type="text/javascript" defer></script>
+        <script src="components/input_money.js" type="text/javascript" defer></script>
+        <script src="components/input_percent.js" type="text/javascript" defer></script>
+        <script src="components/input_time.js" type="text/javascript" defer></script>
+        <script src="components/input_number.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header-component></header-component>
+        <!--Contents here-->
+        <div class="input-fields">
+            <toggle-button key="tax.enabled ep.config" name="Tax" info="Enables/Disables Taxing" default="1"></toggle-button>
+            <input-money key="tax.min_amount" name="Income Before Tax" info="Amount of Currency obtained before Taxing starts." default="1000"></input-money>
+            <input-percent key="tax.rate" name="Tax Rate" info="Tax taken from the player." default="15"></input-percent>
+            <input-time key="tax.interval" name="Tax Timer" info="Time between taxing." default="72000"></input-time>
+        </div>
+        <div class="sidebar">
+            <div class="logo-details">
+              <i class=''></i>
+                <div class="logo_name">Menu</div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+              <ul class="nav-list">
+              <!-- <li>
+                  <i class='bx bx-search' ></i>
+                  <input type="text" placeholder="Search...">
+                  <span class="tooltip-left">Search</span>
+              </li> -->
+              <li>
+                <a href="https://www.youtube.com/channel/UCfND3L_8BCYIC7_VGJm61ug?view_as=subscriber" target="_blank">
+                  <i class='bx bxl-youtube'></i>
+                  <span class="social">Youtube</span>
+                </a>
+                  <span class="tooltip-left">Youtube</span>
+              </li>
+              <li>
+                <a href="https://discord.gg/FXUv7J6" target="_blank">
+                  <i class='bx bxl-discord'></i>
+                  <span class="social">Discord</span>
+                </a>
+                <span class="tooltip-left">Discord</span>
+              </li>
+              <li>
+                <a href="https://www.paypal.com/paypalme/fend0ran" target="_blank">
+                  <i class='bx bxl-paypal'></i>
+                  <span class="social">PayPal</span>
+                </a>
+                <span class="tooltip-left">PayPal</span>
+              </li>
+              <li>
+                <a href="https://www.patreon.com/fendoran?fan_landing=true" target="_blank">
+                  <i class='bx bxl-patreon'></i>
+                  <span class="social">Patreon</span>
+                </a>
+                <span class="tooltip-left">Patreon</span>
+              </li>
+              <li class="information">
+                  <div class="information-details">
+                  <a href="EconomyPlus Settings/nav/information.html">
+                    <i class='bx bx-info-circle'></i>
+                      <div class="name">Information</div>
+                  </div>
+              </li>
+            </ul>
+        </div>
+        <script src="EconomyPlus Settings/components/menu_animation.js"></script>
+    </body>
+</html>

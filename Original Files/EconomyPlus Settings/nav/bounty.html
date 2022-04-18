@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>EconomyPlus | Bounty</title>
+        <base href="../">
+        <link rel="icon" href="assets/page_icon.gif">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Scada&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav_bar.css">
+        <link rel="stylesheet" href="css/content_styles.css">
+        <script src="components/header.js" type="text/javascript" defer></script>
+        <script src="components/toggle_button.js" type="text/javascript" defer></script>
+        <script src="components/input_money.js" type="text/javascript" defer></script>
+        <script src="components/input_percent.js" type="text/javascript" defer></script>
+        <script src="components/input_time.js" type="text/javascript" defer></script>
+        <script src="components/input_number.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header-component></header-component>
+        <!--Contents here-->
+        <div class="input-fields">
+            <toggle-button key="bounty.enabled" name="Bounty" info="Enables/Disables Bounties." default="1"></toggle-button>
+            <toggle-button key="bounty.travel" name="Travel" info="Enables/Disables the player for being able to use Travel when having a bounty." default="0"></toggle-button>
+            <toggle-button key="bounty.payoff" name="Payoff Bounty" info="Enables/Disables the player for being able to pay off their bounty." default="1"></toggle-button>
+            <input-percent key="bounty.return.percent" name="Payoff Interest" info="The additional interest amount it will cost for the player to pay off their bounty in addition to their actual value." default="25"></input-percent>
+            <toggle-button key="bounty.blacklist" name="Blacklisted" info="Enables/Disables the Player to get blacklisted when getting a bounty." default="0"></toggle-button>
+            <input-percent key="bounty_percent" name="Money On Kill" info="Amount of Currency that the player receive when killing another player when on a bounty (This is based on the amount that the player would've dropped when dying)." default="90"></input-percent>
+            <input-time key="bounty.interval" name="Decrease Timer" info="Time it takes before the player on a bounty will gradually decrease in value (when it reaches 0, the player will no longer be on a bounty)." default="30000"></input-time>
+            <input-money key="bounty_decrease" name="Decrease Value" info="Amount of Currency that the player will lose over time when on a bounty." default="50"></input-money>
+        </div>
+        <div class="sidebar">
+            <div class="logo-details">
+              <i class=''></i>
+                <div class="logo_name">Menu</div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+              <ul class="nav-list">
+              <!-- <li>
+                  <i class='bx bx-search' ></i>
+                  <input type="text" placeholder="Search...">
+                  <span class="tooltip-left">Search</span>
+              </li> -->
+              <li>
+                <a href="https://www.youtube.com/channel/UCfND3L_8BCYIC7_VGJm61ug?view_as=subscriber" target="_blank">
+                  <i class='bx bxl-youtube'></i>
+                  <span class="social">Youtube</span>
+                </a>
+                  <span class="tooltip-left">Youtube</span>
+              </li>
+              <li>
+                <a href="https://discord.gg/FXUv7J6" target="_blank">
+                  <i class='bx bxl-discord'></i>
+                  <span class="social">Discord</span>
+                </a>
+                <span class="tooltip-left">Discord</span>
+              </li>
+              <li>
+                <a href="https://www.paypal.com/paypalme/fend0ran" target="_blank">
+                  <i class='bx bxl-paypal'></i>
+                  <span class="social">PayPal</span>
+                </a>
+                <span class="tooltip-left">PayPal</span>
+              </li>
+              <li>
+                <a href="https://www.patreon.com/fendoran?fan_landing=true" target="_blank">
+                  <i class='bx bxl-patreon'></i>
+                  <span class="social">Patreon</span>
+                </a>
+                <span class="tooltip-left">Patreon</span>
+              </li>
+              <li class="information">
+                  <div class="information-details">
+                  <a href="EconomyPlus Settings/nav/information.html">
+                    <i class='bx bx-info-circle'></i>
+                      <div class="name">Information</div>
+                  </div>
+              </li>
+            </ul>
+        </div>
+        <script src="EconomyPlus Settings/components/menu_animation.js"></script>
+    </body>
+</html>
